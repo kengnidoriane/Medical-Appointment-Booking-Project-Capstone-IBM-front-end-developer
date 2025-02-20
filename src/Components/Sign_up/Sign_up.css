@@ -13,7 +13,7 @@
 } */
 
 body {
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
     /* background-color: #f4f4f4; */
     display: flex;
     justify-content: center;
@@ -23,7 +23,6 @@ body {
 }
 
 .container {
-    background-color: #d44141;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -86,7 +85,7 @@ button:hover {
     background-color: #3685fb;
 }
 
-.message {
+/* .message {
     text-align: center;
     margin-top: 15px;
 }
@@ -98,4 +97,4 @@ button:hover {
 
 .message a:hover {
     text-decoration: underline;
-}
+} */
