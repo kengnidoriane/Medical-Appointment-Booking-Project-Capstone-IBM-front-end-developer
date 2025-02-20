@@ -18,7 +18,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 100vh; */
+    height: 100vh;
     margin: 0;
 }
 
@@ -28,6 +28,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 350px;
     margin-top: 7rem;
+    background-color: #e5e7e9;
 }
 
 h2 {
@@ -76,10 +77,9 @@ p {
     cursor: pointer;
 }
 
-/* button[type="reset"] {
-    background-color: var(--red-reset-button);
+button[type="reset"] {
     margin-top: 10px;
-} */
+}
 
 button:hover {
     background-color: #3685fb;

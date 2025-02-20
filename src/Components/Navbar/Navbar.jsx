@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 export default function Navbar() {
+  const token = sessionStorage.getItem('auth-token');
+  const name = sessionStorage.getItem('name');
   const handleClick = () => {
 
   };
@@ -40,16 +42,28 @@ export default function Navbar() {
         <li className="link">
           <Link to="#">Reviews</Link>
         </li>
-        <li className="link">
-          <Link to="/sign_up">
-            <button className="btn1">Sign Up</button>
-          </Link>
-        </li>
-        <li className="link">
-          <Link to="/Login">
-            <button className="btn1">Login</button>
-          </Link>
-        </li>
+        { token? (<div>
+                    <li><p>Welcome, {name}</p></li>
+                    <li><button>logout</button></li>
+                  </div>)
+            : (
+              <div>
+                    <li className="link">
+                      <Link to="/sign_up">
+                        <button className="btn1">Sign Up</button>
+                      </Link>
+                    </li>
+                    <li className="link">
+                      <Link to="/Login">
+                        <button className="btn1">Login</button>
+                      </Link>
+                    </li>
+              </div>
+            )
+
+
+        }
+
       </ul>
     </nav>
   );

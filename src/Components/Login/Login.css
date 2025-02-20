@@ -1,15 +1,14 @@
-/* body {
+body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-} */
+}
 
 .container {
-    background-color: #e3dcdc;
+    background-color: #d8dde3;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -45,7 +44,7 @@ input[type="password"] {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #5cb85c;
+    background-color: #3685fb;
     color: white;
     border: none;
     border-radius: 4px;
@@ -54,7 +53,7 @@ button {
 
 button[type="reset"] {
     margin-top: 10px;
-    background-color: tomato;
+    background-color: rgb(196, 24, 24);
 }
 
 button:hover {

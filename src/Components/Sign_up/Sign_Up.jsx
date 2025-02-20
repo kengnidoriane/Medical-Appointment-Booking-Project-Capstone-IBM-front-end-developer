@@ -1,6 +1,6 @@
 // Following code has been commented with appropriate comments for your reference.
 import { useState } from 'react';
-import './Sign_Up.css'
+import './Sign_up.css'
 import { Link, useNavigate } from 'react-router-dom';
 import { API_URL } from '../../config';
 
@@ -57,10 +57,11 @@ const Sign_Up = () => {
 
     // JSX to render the Sign Up form
     return (
-        <div className="container" style={{marginTop:'5%'}}>
+        <div className="container" style={{marginTop:'35%'}}>
             <div className="signup-grid">
                 <div className="signup-form">
                     <form method="POST" onSubmit={register}>
+                        <h2>Sign up</h2>
                         {/* <div className="form-group">
                           <label htmlFor="role">Role</label>
                           <select
@@ -118,8 +119,13 @@ const Sign_Up = () => {
                             />
                         </div>
                         {/* Apply similar logic for other form elements like name, phone, and password to capture user information */}
+                        <div>
+                          <button type="submit">Submit</button>
+                          <button type="reset" >Reset</button>
+                        </div>
                     </form>
                     <p><small>Already a member? </small><span className='login_link'><Link to="/login" style={{ color: '#3685fb', textDecoration: 'none', fontWeight: 500 }} >Login</Link></span> </p>
+
                 </div>
             </div>
         </div>
