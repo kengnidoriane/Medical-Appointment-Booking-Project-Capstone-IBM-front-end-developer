@@ -1,6 +1,6 @@
 import  { useState } from 'react';
-import { Link } from 'react-router-dom'; // Import Link from react-router-dom
-import './Sign_up.css'; // Ensure the CSS file is in the same directory or adjust the path
+import { Link } from 'react-router-dom';
+import './Sign_up.css';
 
 const SignUp = () => {
   const [role, setRole] = useState('');
@@ -31,8 +31,7 @@ const SignUp = () => {
     <div className="container">
       <form className="sign-up-form" onSubmit={handleSubmit}>
         <h2>Sign Up</h2>
-        <br />
-        <p><small>Sign up as a Patient</small></p>
+        {/* <p><small>Sign up as a Patient</small></p> */}
         <p><small>Already a member?</small> <Link to="/login">Login</Link></p>
         <br />
         <div className="form-group">
