@@ -31,8 +31,7 @@ const SignUp = () => {
     <div className="container">
       <form className="sign-up-form" onSubmit={handleSubmit}>
         <h2>Sign Up</h2>
-        {/* <p><small>Sign up as a Patient</small></p> */}
-        <p><small>Already a member?</small> <Link to="/login">Login</Link></p>
+        <p><small>Already a member? </small><span className='login_link'><Link to="/login" style={{ color: '#3685fb', textDecoration: 'none', fontWeight: 500 }} >Login</Link></span> </p>
         <br />
         <div className="form-group">
           <label htmlFor="role">Role</label>
@@ -98,8 +97,8 @@ const SignUp = () => {
           />
         </div>
         <div className="form-group">
-          <button type="submit">Submit</button>
-          <button type="reset">Reset</button>
+          <button type="submit" className='submit_button'>Submit</button>
+          <button type="reset" >Reset</button>
         </div>
       </form>
     </div>
