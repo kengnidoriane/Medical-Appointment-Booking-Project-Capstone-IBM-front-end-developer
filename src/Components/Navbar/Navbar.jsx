@@ -4,8 +4,10 @@ import './Navbar.css';
 export default function Navbar() {
   const token = sessionStorage.getItem('auth-token');
   const name = sessionStorage.getItem('name');
-  const handleClick = () => {
-
+  const handleClickLoggout = () => {
+      sessionStorage.removeItem('auth-token');
+      sessionStorage.removeItem('name');
+      window.location.reload();
   };
 
   return (
@@ -50,7 +52,7 @@ export default function Navbar() {
               <div>
                     <li className="link">
                       <Link to="/sign_up">
-                        <button className="btn1">Sign Up</button>
+                        <button onClick={handleClickLoggout} className="btn1">Sign Up</button>
                       </Link>
                     </li>
                     <li className="link">
