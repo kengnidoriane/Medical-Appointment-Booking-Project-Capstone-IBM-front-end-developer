@@ -21,7 +21,7 @@ body {
     height: 100vh;
     margin: 0;
 }
-
+/* 
 .container {
     padding: 20px;
     border-radius: 5px;
@@ -64,13 +64,12 @@ select {
 
 p {
     text-align: center;
-}
+} */
 
-.form-group button {
+/* .form-group button {
     width: 100%;
     padding: 10px;
     background-color: #3685fb;
-    /* background-color: var(--main-blue-color); */
     color: #ffffff;
     border: none;
     border-radius: 4px;
@@ -83,7 +82,7 @@ button[type="reset"] {
 
 button:hover {
     background-color: #3685fb;
-}
+} */
 
 /* .message {
     text-align: center;
