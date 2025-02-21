@@ -41,7 +41,7 @@ input[type="password"] {
     outline: 0;
 }
 
-button {
+.btn-group button {
     width: 100%;
     padding: 10px;
     background-color: #3685fb;

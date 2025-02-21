@@ -1,27 +1,11 @@
-/* * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-} */
-
-/* :root {
-    --main-blue-color: #3685fb;
-    --red-reset-button: red;
-    --bacground-reset-button: tomato;
-    --background-submit-button: green;
-} */
-
-body {
-    /* font-family: "Poppins", sans-serif; */
-    /* background-color: #f4f4f4; */
+/* body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
 }
-/* 
+
 .container {
     padding: 20px;
     border-radius: 5px;
@@ -64,9 +48,9 @@ select {
 
 p {
     text-align: center;
-} */
+}
 
-/* .form-group button {
+.btn button {
     width: 100%;
     padding: 10px;
     background-color: #3685fb;
@@ -82,9 +66,9 @@ button[type="reset"] {
 
 button:hover {
     background-color: #3685fb;
-} */
+}
 
-/* .message {
+.message {
     text-align: center;
     margin-top: 15px;
 }

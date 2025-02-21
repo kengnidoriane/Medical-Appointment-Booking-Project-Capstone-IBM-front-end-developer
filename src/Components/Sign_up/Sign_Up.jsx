@@ -108,7 +108,7 @@ const Sign_Up = () => {
                               aria-describedby="helpId"
                             />
                         </div>
-                        <div className="form-group">
+                        <div>
                             <label htmlFor="password">Password</label>
                             <input
                               type="password"
@@ -122,7 +122,7 @@ const Sign_Up = () => {
                             />
                         </div>
                         {/* Apply similar logic for other form elements like name, phone, and password to capture user information */}
-                        <div>
+                        <div className='btn-group'>
                           <button type="submit">Submit</button>
                           <button type="reset" >Reset</button>
                         </div>
