@@ -2,13 +2,34 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 export default function Navbar() {
+
   const token = sessionStorage.getItem('auth-token');
-  const name = sessionStorage.getItem('name');
+  const emailFromSessionStorage = sessionStorage.getItem('email') || '';
+  function getUsernameFromEmail(email) {
+    if (!email) {
+      return null
+    }
+    if (email.includes('@')) {
+        const [username] = email.split('@');
+        return username;
+    } else {
+        return null;
+    }
+  }
+
+  const name = getUsernameFromEmail(emailFromSessionStorage)
+  const handleClick = () => {
+
+  }
+
   const handleClickLoggout = () => {
       sessionStorage.removeItem('auth-token');
       sessionStorage.removeItem('name');
       window.location.reload();
   };
+
+
+
 
   return (
     <nav>
@@ -44,15 +65,18 @@ export default function Navbar() {
         <li className="link">
           <Link to="#">Reviews</Link>
         </li>
-        { token? (<div>
+        { token? (<div className='group__button'>
                     <li><p>Welcome, {name}</p></li>
-                    <li><button>logout</button></li>
+                    <li><button onClick={handleClickLoggout}>
+                          logout
+                        </button>
+                      </li>
                   </div>)
             : (
-              <div>
+              <div className='group__button'>
                     <li className="link">
                       <Link to="/sign_up">
-                        <button onClick={handleClickLoggout} className="btn1">Sign Up</button>
+                        <button className="btn1">Sign Up</button>
                       </Link>
                     </li>
                     <li className="link">
@@ -62,10 +86,7 @@ export default function Navbar() {
                     </li>
               </div>
             )
-
-
         }
-
       </ul>
     </nav>
   );

@@ -91,6 +91,7 @@ const Sign_Up = () => {
                               required
                               value={name}
                               onChange={(e) => setName(e.target.value)}
+                              aria-describedby="helpId"
                             />
                         </div>
                         <div className="form-group">
@@ -104,6 +105,7 @@ const Sign_Up = () => {
                               value={phone}
                               onChange={(e) => setPhone(e.target.value)}
                               maxLength="10"
+                              aria-describedby="helpId"
                             />
                         </div>
                         <div className="form-group">
@@ -116,6 +118,7 @@ const Sign_Up = () => {
                               required
                               value={password}
                               onChange={(e) => setPassword(e.target.value)}
+                              aria-describedby="helpId"
                             />
                         </div>
                         {/* Apply similar logic for other form elements like name, phone, and password to capture user information */}
