@@ -5,15 +5,24 @@
 
 .home-search-container {
     margin-top: 20px;
+    font-family: sans-serif;
 }
 
 .doctor-search-box {
     position: relative;
 }
 
+.search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888; /* Icon color */
+}
+
 .search-doctor-input-box {
-    width: 300px;
-    padding: 10px;
+    width: 350px;
+    padding: 10px 10px 10px 40px; /* Adjust padding for icon */
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px; /* Larger font size */
@@ -25,16 +34,35 @@
     left: 0;
     right: 0;
     background-color: white;
-    border: 1px solid #ccc;
+    border: 2px solid #ccc;
+    width: 500px;
     border-radius: 4px;
+    margin-top: 20px;
     z-index: 1000;
 }
 
 .search-doctor-result-item {
-    padding: 10px;
+    /* padding: 10px; */
     cursor: pointer;
 }
 
+.result-item {
+    display: flex;
+    align-items: center;
+    padding: .8rem;
+    border-bottom: .5px solid #ccc;
+}
+
+.result-icon {
+    margin-right: 10px; /* Space between icon and specialty name */
+    color: #888; /* Icon color */
+}
+
+.speciality-label {
+    margin-left: auto; /* Pushes the label to the right */
+    color: #555; /* Label color */
+}
+
 .search-doctor-result-item:hover {
-    background-color: #e0e0e0; /* Hover color */
+    background-color: #f8f6f6;
 }

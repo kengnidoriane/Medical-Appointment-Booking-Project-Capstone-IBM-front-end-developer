@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './FindDoctorSearch.css';
+import { FaSearch } from 'react-icons/fa'; // Importing the search icon
 
 const initSpeciality = [
     'Dentist', 'Gynecologist/obstetrician', 'General Physician', 'Dermatologist',
@@ -26,15 +27,18 @@ const FindDoctorSearch = () => {
                 </div>
                 <div className="home-search-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <div className="doctor-search-box">
-                        <input 
-                            type="text" 
-                            className="search-doctor-input-box" 
-                            placeholder="Search doctors, clinics, hospitals, etc." 
-                            onFocus={() => setDoctorResultHidden(false)} 
-                            onBlur={() => setDoctorResultHidden(true)} 
-                            value={searchDoctor} 
-                            onChange={(e) => setSearchDoctor(e.target.value)} 
+                        <input
+                            type="text"
+                            className="search-doctor-input-box"
+                            placeholder="Search doctors, clinics, hospitals, etc."
+                            onFocus={() => setDoctorResultHidden(false)}
+                            onBlur={() => setDoctorResultHidden(true)}
+                            value={searchDoctor}
+                            onChange={(e) => setSearchDoctor(e.target.value)}
                         />
+                        <div className="search-icon">
+                            <FaSearch />
+                        </div>
                         <div className="search-doctor-input-results" hidden={doctorResultHidden}>
                             {
                                 specialities.map(speciality => (
@@ -43,7 +47,11 @@ const FindDoctorSearch = () => {
                                         key={speciality} 
                                         onMouseDown={() => handleDoctorSelect(speciality)}
                                     >
-                                        <span>{speciality}</span>
+                                        <div className="result-item">
+                                            <FaSearch className="result-icon" />
+                                            <span>{speciality}</span>
+                                            <span className="speciality-label">Speciality</span>
+                                        </div>
                                     </div>
                                 ))
                             }
