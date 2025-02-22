@@ -1,4 +1,4 @@
-.doctor-card-container {
+/* .doctor-card-container {
     width: 300px;
     height: 100%;
     border: 1px solid #ccc;
@@ -139,7 +139,7 @@
 
 .cancel-appointment-btn:hover {
   background-color: #d63027;
-}
+} */
 .appointment-form {
   max-width: 400px;
   margin: 0 auto;
@@ -150,7 +150,7 @@
   overflow-y: auto; */
 }
 
-.form-group {
+/* .form-group {
   margin-bottom: 20px;
 }
 
@@ -181,11 +181,11 @@ button {
 
 button:hover {
   background-color: #0056b3;
-}
+} */
 
 
-.btnslot{
+/* .btnslot{
   background-color: green;
   cursor: pointer;
   /* color: rgb(249, 60, 60); */
-}
+
