@@ -1,0 +1,40 @@
+.finddoctor {
+    padding: 20px;
+    background-color: #f9f9f9; /* Soft background color */
+}
+
+.home-search-container {
+    margin-top: 20px;
+}
+
+.doctor-search-box {
+    position: relative;
+}
+
+.search-doctor-input-box {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px; /* Larger font size */
+}
+
+.search-doctor-input-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+.search-doctor-result-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.search-doctor-result-item:hover {
+    background-color: #e0e0e0; /* Hover color */
+}
