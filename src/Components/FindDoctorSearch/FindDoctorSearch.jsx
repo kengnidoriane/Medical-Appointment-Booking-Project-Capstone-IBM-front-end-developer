@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './FindDoctorSearch.css';
-import { FaSearch } from 'react-icons/fa'; // Importing the search icon
+import { FaSearch } from 'react-icons/fa';
 
 const initSpeciality = [
     'Dentist', 'Gynecologist/obstetrician', 'General Physician', 'Dermatologist',
@@ -15,7 +15,6 @@ const FindDoctorSearch = () => {
     const handleDoctorSelect = (speciality) => {
         setSearchDoctor(speciality);
         setDoctorResultHidden(true);
-        // Logic for navigation or action after selection
     };
 
     return (
@@ -42,9 +41,9 @@ const FindDoctorSearch = () => {
                         <div className="search-doctor-input-results" hidden={doctorResultHidden}>
                             {
                                 specialities.map(speciality => (
-                                    <div 
-                                        className="search-doctor-result-item" 
-                                        key={speciality} 
+                                    <div
+                                        className="search-doctor-result-item"
+                                        key={speciality}
                                         onMouseDown={() => handleDoctorSelect(speciality)}
                                     >
                                         <div className="result-item">
